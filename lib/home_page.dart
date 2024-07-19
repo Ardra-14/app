@@ -75,19 +75,19 @@ class HomePage extends StatelessWidget {
               ),
             ),
 
-            // Expanded(
+            Expanded(
               
-            //   child: GridView.builder(
-            //   padding: EdgeInsets.all(12),
-            //   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,
-            //           childAspectRatio: 1 / 1.3,
-            //           ),
-            //           itemCount: groceryItem.length,
-            //   itemBuilder: (context, index) {
-            //     return GroceryTile();
-            //   },
-            //   )
-            //   )
+              child: GridView.builder(
+              padding: EdgeInsets.all(12),
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,
+                      childAspectRatio: 1 / 1.3,
+                      ),
+                      itemCount: groceryItem.length,
+              itemBuilder: (context, index) {
+                return GroceryTile(grocery: groceryItem[index]);
+              },
+              )
+              )
         ],
         ),
         )

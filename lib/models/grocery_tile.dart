@@ -4,6 +4,7 @@ import 'package:my_app/models/grocery_item.dart';
 import 'package:provider/provider.dart';
 
 class GroceryTile extends StatelessWidget {
+  
   final Grocery grocery;
 
   GroceryTile({super.key, required this.grocery});

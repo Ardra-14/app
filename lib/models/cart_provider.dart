@@ -56,4 +56,11 @@ class CartProvider extends ChangeNotifier{
     return 0;
   }
 
+ String calculateTotal(){
+  double totalprice = 0;
+ _items.forEach((item){
+  totalprice += item.grocery.price * item.quantity;
+ });
+  return totalprice.toStringAsFixed(2);
+ }
 }
